@@ -7,7 +7,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "foo" {
-  #acl = "public-read-write"
+  acl = "public-read-write"
   bucket = "systest-tf-log-bucket-bb22"
   versioning {
     enabled = false
